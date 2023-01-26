@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/ambience-realty/static/css/main.a06e9529.css",
+    "main.js": "/ambience-realty/static/js/main.1bf3c852.js",
+    "static/media/Homepage_banner1.jpg": "/ambience-realty/static/media/Homepage_banner1.d9889e1eaf9a6eb51fbe.jpg",
+    "static/media/realtor_home.jpg": "/ambience-realty/static/media/realtor_home.1b2ea4dced4a1b74e7e7.jpg",
+    "static/media/assitant.jpg": "/ambience-realty/static/media/assitant.55c311327a8236de174e.jpg",
+    "static/media/realtor.jpg": "/ambience-realty/static/media/realtor.12ca3edb67245ff2580a.jpg",
+    "index.html": "/ambience-realty/index.html",
+    "main.a06e9529.css.map": "/ambience-realty/static/css/main.a06e9529.css.map",
+    "main.1bf3c852.js.map": "/ambience-realty/static/js/main.1bf3c852.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a06e9529.css",
+    "static/js/main.1bf3c852.js"
+  ]
+}
