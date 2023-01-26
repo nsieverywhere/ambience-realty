@@ -8,7 +8,7 @@ import About from "../pages/About";
 
 function Navbar() {
   return (
-    <Router>
+    <Router basename={window.location.pathname || ""}>
       <nav id="nav" class="navbar  navbar-expand-lg navbar-light ">
         <img
           className="companylogo"
