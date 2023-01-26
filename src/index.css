@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+body {
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  color: #042a13;
+}
+
+.companylogo {
+  width: 5rem;
+  margin-right: 1rem;
+}
+
+#navbar-brand {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.8rem;
+}
+
+#nav {
+  background-color: #eeebd3;
+  min-height: 7.5rem;
+  padding: 0 4rem;
+}
+
+.nav-link {
+  color: #042a13;
+  font-size: 0.93rem;
+}
+
+.hero2 {
+  text-align: center;
+  min-height: 45rem;
+}
+
+.hero2 div {
+  height: 28rem;
+  padding: 6rem 5rem;
+  color: #042a13;
+  font-size: 1.1rem;
+}
+
+.altbox1 {
+  background-image: url("../public/images/realtor.jpg");
+}
+
+.altbox2 {
+  background-image: url("../public/images/realtor_home.jpg");
+}
+
+.altbox3 {
+  background-image: url("../public/images/assitant.jpg");
+}
+
+.footercontainer {
+  bottom: 0;
+  width: 100%;
+}
+
+footer {
+  text-align: center;
+  margin: auto;
+  color: #eeebd3;
+  padding: 5rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+footer a {
+  color: #eeebd3;
+  text-decoration: none;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+footer p {
+  font-size: 0.9rem;
+  position: absolute;
+  bottom: 0;
+}
+
+.footerform {
+  margin-bottom: 3rem;
+}
+
+.footerform input {
+  height: 2.5rem;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.emailsubmit {
+  background-color: #eeebd3;
+  border: none;
+  color: #042a13;
+}
+
+.emailinput {
+  background-color: rgba(255, 255, 255, 0);
+  color: white;
+  border-color: white;
+  border-width: 1px;
+  border-radius: 0;
+  margin-top: 1rem;
+}
+
+@media screen and (min-width: 600px) {
+  .footerform input {
+    width: 30rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .companylogo {
+    width: 3rem;
+    margin-right: 0.3rem;
+  }
+  #navbar-brand {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 1.5rem;
+  }
+  #nav {
+    background-color: #eeebd3;
+    min-height: 7.5rem;
+    padding: 1rem 1rem;
+  }
+  .form-group {
+    width: 17rem;
+  }
+}/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+$color1: #042a13;
+$color2:   #eeebd3;
+$headerfont: 'Cormorant Garamond',
+serif;
+
+
+body {
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+  color: $color1;
+}
+
+.homepage_banner {
+  background-image: url("../public/images/Homepage_banner1.jpg");
+  height: 40rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.welcome_text {
+  background-color: #d1c4b16b;
+  height: 40rem;
+  width: 43rem;
+  padding: 4rem 8rem;
+  text-align: center;
+}
+
+.hero2   p{
+  margin-top: 2rem;
+
+}
+
+.homepage_banner h1{
+  font-family: $headerfont;
+ margin-bottom: 2.5rem;
+ padding-top: 2rem;
+}
+
+.ctabtn {
+  background-color: $color1;
+  width: 8rem;
+  height: 3rem;
+  color: white;
+  margin: auto;
+  border: none;
+}
+
+.contactus{
+  text-decoration: none;
+  color: $color2;
+}
+
+.services{
+  padding-top: 6rem;
+  text-align: center;
+  font-family: $headerfont;
+}
+
+.companylogo {
+  width: 5rem;
+  margin-right: 1rem;
+}
+
+#navbar-brand {
+  font-family: $headerfont;
+  font-size: 1.8rem;
+}
+
+#nav {
+  background-color: $color2;
+  min-height: 7.5rem;
+  padding: 0 4rem;
+}
+
+.nav-link {
+  color: $color1;
+  font-size: 0.93rem;
+}
+
+.hero2{
+  text-align: center;
+  min-height: 45rem;
+}
+
+.hero2 div {
+  height: 28rem;
+  padding: 5rem 5rem;
+  color: #042a13;
+  font-size: 1.1rem;
+}
+
+.hero3{
+  padding: 6rem 5rem;
+  
+}
+
+.sociallinks a{
+margin: 1rem;
+font-size: 1.1rem;
+}
+
+.hero3 img {
+  width: 100%;
+}
+
+.altboxstyles{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.altbox1 {
+  background-image: url("../public/images/realtor.jpg");
+  @extend .altboxstyles;
+}
+
+.altbox2 {
+  background-image: url("../public/images/realtor_home.jpg");
+  @extend .altboxstyles;
+}
+
+.altbox3 {
+  background-image: url("../public/images/assitant.jpg");
+  @extend .altboxstyles;
+}
+
+// form
+.form1 {
+  text-align: left;
+  padding: 2rem;
+}
+
+.textinputsarea {
+  width: 100%;
+  border: #042a13 1px solid;
+  border-radius: 0;
+  margin-bottom: 1rem;
+  background-color: #d1c4b100;
+}
+
+.textinputs {
+  @extend .textinputsarea;
+  height: 2.8rem;
+}
+
+
+
+.textinputsarea:focus, .textinputs:focus{
+  background-color: #d1c4b100;
+} 
+
+.property{
+  padding: 3rem;
+}
+
+.property img{
+  width: 80%;
+}
+
+.products{
+  margin-bottom: 2rem;
+}
+
+.products .description{
+  margin-top: 4rem;
+}
+
+.description h3{
+  margin-bottom: 2rem;
+}
+
+.Inquire{
+  text-align: center;
+  color: white;
+  padding-top: 2rem;
+}
+
+.contactpage {
+margin-bottom: 3rem;
+}
+
+.abouttext{
+  margin: 3rem 0;
+}
+
+.abouttext h1{
+  font-family: $headerfont;
+  // margin-top: 3rem;
+}
+
+// footer
+.footercontainer{
+  bottom: 0;
+  width: 100%;
+}
+footer{
+  text-align: center;
+  margin: auto;
+  color: $color2;
+  padding: 5rem 5rem 0rem 5rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+footer a{
+  color: $color2;
+  text-decoration: none;
+  font-size: .9rem;
+  margin-bottom: 0.5rem;
+}
+
+footer p {
+  font-size: .9rem;
+  margin-top: 3rem;
+}
+
+.footerform{
+  margin-bottom: 3rem;
+}
+
+.footerform input{
+  height: 2.5rem;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.emailsubmit {
+  background-color: $color2;
+  border: none;
+  color: $color1;
+}
+
+.emailinput {
+  background-color: rgba(255, 255, 255, 0);
+  color: white;
+  border-color: white;
+  border-width: 1px;
+  border-radius: 0;
+  margin-top: 1rem;
+}
+
+
+
+
+
+// media query
+
+// browser is 600px and above
+@media screen and (min-width: 600px) {
+  .footerform input {
+    width: 30rem;
+  }
+ 
+}
+
+@media screen and (max-width: 600px) {
+.companylogo {
+    width: 3rem;
+    margin-right: .3rem;
+  }
+
+  #navbar-brand {
+    font-family: $headerfont;
+    font-size: 1.5rem;
+  }
+
+  #nav {
+    background-color: $color2;
+    min-height: 7.5rem;
+    padding: 1rem 1rem;
+  }
+    
+  .form-group{
+    width: 17rem;
+  }
+
+  .form1 {
+    padding: 0rem ;
+    padding-top: 4rem;
+    padding: auto;
+  }
+
+.welcome_text {
+  padding: 4rem 3rem;
+}
+
+.services h2{
+  font-size: 2.4rem;
+}
+
+.hero2 div {
+    padding: 6rem 2rem;
+}
+
+.hero3 {
+  padding: 6rem 2rem;
+
+}
+
+.ctabtn{
+width: 100%;
+}
+
+.inputfield {
+  // @extend .textinputsarea;
+  width: 100%;
+
+}
+
+.property{
+  // margin: auto;
+  text-align: center;
+}
+
+}
+
