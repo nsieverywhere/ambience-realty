@@ -13,7 +13,7 @@ function Getintouch() {
     event.preventDefault();
 
     const config = {
-      SecureToken: "a19830e6-5af2-4bbe-89e3-087f7a7b8d1f",
+      SecureToken: "2c1a1197-81ef-4b14-a5d8-1239e25d8519",
       To: "ambiencerealtyng@gmail.com",
       From: email,
       Subject: subject,
