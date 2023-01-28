@@ -1,7 +1,8 @@
 import React from "react";
 import { Container } from "./container";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { useState } from "react";
+import { useState, useRef } from "react";
+import emailjs from "@emailjs/browser";
 import {
   faTwitter,
   faLinkedinIn,
@@ -9,35 +10,44 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 
 function Footer() {
+  const form = useRef();
   const [email, setEmail] = useState("");
   const [success, setSuccess] = useState("");
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    const config = {
-      SecureToken: "a19830e6-5af2-4bbe-89e3-087f7a7b8d1f",
-      To: "ambiencerealtyng@gmail.com",
-      From: email,
-      Subject: "Hello, kindly add me to your Newsletter! ",
-      Body: `This is my email: ${email}`,
-    };
-
-    if (window.Email) {
-      window.Email.send(config).then(() => {
-        setSuccess("Sent Successfully!");
-
-        function remove() {
-          setSuccess("");
-        }
-
-        window.setTimeout(remove, 4000);
-      });
+    function remove() {
+      setSuccess("");
     }
+
+    emailjs
+      .sendForm(
+        "service_7my4mtb",
+        "template_k06zlwr",
+        form.current,
+        "w2g6m_U1JFQryWjcd"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          setSuccess("Sent Successfully!");
+
+          window.setTimeout(remove, 2500);
+        },
+        (error) => {
+          console.log(error.text);
+          setSuccess("Did not send, try again.");
+
+          window.setTimeout(remove, 2500);
+        }
+      );
+    event.target.reset();
   };
+  // };
   return (
     <Container className="footercontainer" background="#042a13" height="27rem">
       <footer>
-        <form className="footerform" onSubmit={handleSubmit}>
+        <form ref={form} className="footerform" onSubmit={handleSubmit}>
           <div class="form-group">
             <label for="email">Subscribe Form</label>
 
@@ -46,6 +56,7 @@ function Footer() {
               class="form-control emailinput"
               id="email"
               placeholder="Enter your email"
+              name="message"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
             />
