@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useRef } from "react";
 import { Container } from "./container";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from "react";
+import emailjs from "@emailjs/browser";
 import {
   faTwitter,
   faLinkedinIn,
@@ -9,44 +10,42 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 
 function Footer() {
+  const form = useRef();
   const [email, setEmail] = useState("");
   const [success, setSuccess] = useState("");
 
   const handleSubmit = (event) => {
-    event.preventDefault();
-    const config = {
-      SecureToken: "a19830e6-5af2-4bbe-89e3-087f7a7b8d1f",
-      To: "ambiencerealtyng@gmail.com",
-      From: email,
-      Subject: "Hello, kindly add me to your Newsletter! ",
-      Body: `This is my email: ${email}`,
-    };
+    e.preventDefault();
 
-    if (window.Email) {
-      window.Email.send(config).then(() => {
-        setSuccess("Sent Successfully!");
-
-        function remove() {
-          setSuccess("");
+    emailjs
+      .sendForm(
+        "service_xt20ae7",
+        "template_if8zzl2",
+        form.current,
+        "CDmKLKGUEwPhsqCec"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
         }
-
-        window.setTimeout(remove, 4000);
-      });
-    }
+      );
   };
   return (
     <Container className="footercontainer" background="#042a13" height="27rem">
       <footer>
-        <form className="footerform" onSubmit={handleSubmit}>
+        <form ref={form} className="footerform" onSubmit={handleSubmit}>
           <div class="form-group">
             <label for="email">Subscribe Form</label>
-
             <input
               type="email"
               class="form-control emailinput"
               id="email"
               placeholder="Enter your email"
               value={email}
+              name={user_email}
               onChange={(e) => setEmail(e.target.value)}
             />
             <input type="submit" className="emailsubmit" value="submit" />
