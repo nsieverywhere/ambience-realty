@@ -13,12 +13,8 @@ function Getintouch() {
     event.preventDefault();
 
     const config = {
-      // SecureToken: "2c1a1197-81ef-4b14-a5d8-1239e25d8519",
-      Host: "smtp.elasticemail.com",
-      Username: "ambiencerealtyng@gmail.com",
-      Password: "FC99A060378F1BA4955BEAE0043AF7347EAA",
+      SecureToken: "3ecf4187-59f5-4f9f-8135-245ebaf117b8",
       To: "ambiencerealtyng@gmail.com",
-      Port: 2525,
       From: email,
       Subject: subject,
       Body: message,
