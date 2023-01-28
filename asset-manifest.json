@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/static/css/main.79f03499.css",
-    "main.js": "/static/js/main.8e47ce63.js",
+    "main.js": "/static/js/main.06f15436.js",
     "static/media/Homepage_banner1.jpg": "/static/media/Homepage_banner1.d9889e1eaf9a6eb51fbe.jpg",
     "static/media/realtor_home.jpg": "/static/media/realtor_home.1b2ea4dced4a1b74e7e7.jpg",
     "static/media/assitant.jpg": "/static/media/assitant.55c311327a8236de174e.jpg",
     "static/media/realtor.jpg": "/static/media/realtor.12ca3edb67245ff2580a.jpg",
     "index.html": "/index.html",
     "main.79f03499.css.map": "/static/css/main.79f03499.css.map",
-    "main.8e47ce63.js.map": "/static/js/main.8e47ce63.js.map"
+    "main.06f15436.js.map": "/static/js/main.06f15436.js.map"
   },
   "entrypoints": [
     "static/css/main.79f03499.css",
-    "static/js/main.8e47ce63.js"
+    "static/js/main.06f15436.js"
   ]
 }
