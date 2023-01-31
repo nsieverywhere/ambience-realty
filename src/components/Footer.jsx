@@ -82,7 +82,13 @@ function Footer() {
             <FontAwesomeIcon icon={faLinkedinIn} />
           </a>
         </div>
-        <p>©2022 by Ambience Realty.</p>
+        <p>
+          ©2022 by Ambience Realty.
+          <br />
+          <a className="dev" href="https://www.instagram.com/nsi_dev">
+            Developed by Nsieverywhere
+          </a>
+        </p>
       </footer>
     </Container>
   );

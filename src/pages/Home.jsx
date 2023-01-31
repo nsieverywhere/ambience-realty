@@ -33,7 +33,7 @@ function Home() {
         </Heading2>
       </Container>
       <Container className="row hero2" background="#eeebd3" height="45rem">
-        <div className=" col-lg-4 col-md-6 altbox1 ">1</div>
+        <div className=" col-lg-4 col-md-6 altbox1 "></div>
         <div className=" col-lg-4 col-md-6  ">
           <Heading2>Property Consultation</Heading2>
           <Word>
@@ -52,7 +52,7 @@ function Home() {
             scratch to finish.
           </Word>
         </div>
-        <div className=" col-lg-4 col-md-6  altbox3 ">5</div>
+        <div className=" col-lg-4 col-md-6  altbox3 "></div>
         <div className=" col-lg-4 col-md-6  ">
           <Heading2>Property Sales</Heading2>
           <Word>
